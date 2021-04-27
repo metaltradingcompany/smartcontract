@@ -1,0 +1,368 @@
+{
+  "contracts": {
+    "MetalTradingCompanySmartContract": {
+      "address": "0x0adE9D56A4ae4E252763BedF21267fe10656789F",
+      "constructorCode": "6080604052600061019160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600061019260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506040518060400160405280601581526020017f4d6574616c2054726164696e6720436f6d70616e7900000000000000000000008152506101939080519060200190620000d892919062000162565b506040518060400160405280600381526020017f4d5443000000000000000000000000000000000000000000000000000000000081525061019490805190602001906200012792919062000162565b50600061019560006101000a81548160ff021916908360ff1602179055506305f5e100610196553480156200015b57600080fd5b5062000208565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f10620001a557805160ff1916838001178555620001d6565b82800160010185558215620001d6579182015b82811115620001d5578251825591602001919060010190620001b8565b5b509050620001e59190620001e9565b5090565b5b8082111562000204576000816000905550600101620001ea565b5090565b613eec80620002186000396000f3fe",
+      "bodyBytecodeHash": "8d35972a8d84010db406c286eeb18983307b07015c7c513b18c9e5d9abf964d2",
+      "localBytecodeHash": "e2487d00a5e8d75bd462c7ea770c5ec29669fa92bf7c378c9ee5333cc35c0a55",
+      "deployedBytecodeHash": "e2487d00a5e8d75bd462c7ea770c5ec29669fa92bf7c378c9ee5333cc35c0a55",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_struct<AccessControlUpgradeSafe.RoleData>": {
+          "id": "t_struct<AccessControlUpgradeSafe.RoleData>",
+          "kind": "struct",
+          "label": "AccessControlUpgradeSafe.RoleData",
+          "members": [
+            {
+              "label": "members",
+              "astId": 156,
+              "type": "t_struct<EnumerableSet.AddressSet>",
+              "src": "1655:32:2"
+            },
+            {
+              "label": "adminRole",
+              "astId": 158,
+              "type": "t_bytes32",
+              "src": "1697:17:2"
+            }
+          ]
+        },
+        "t_struct<EnumerableSet.AddressSet>": {
+          "id": "t_struct<EnumerableSet.AddressSet>",
+          "kind": "struct",
+          "label": "EnumerableSet.AddressSet",
+          "members": [
+            {
+              "label": "_inner",
+              "astId": 1936,
+              "type": "t_struct<EnumerableSet.Set>",
+              "src": "4644:10:11"
+            }
+          ]
+        },
+        "t_struct<EnumerableSet.Set>": {
+          "id": "t_struct<EnumerableSet.Set>",
+          "kind": "struct",
+          "label": "EnumerableSet.Set",
+          "members": [
+            {
+              "label": "_values",
+              "astId": 1752,
+              "type": "t_array:dyn<t_bytes32>",
+              "src": "1213:17:11"
+            },
+            {
+              "label": "_indexes",
+              "astId": 1756,
+              "type": "t_mapping<t_uint256>",
+              "src": "1364:37:11"
+            }
+          ]
+        },
+        "t_bytes32": {
+          "id": "t_bytes32",
+          "kind": "elementary",
+          "label": "bytes32"
+        },
+        "t_array:dyn<t_bytes32>": {
+          "id": "t_array:dyn<t_bytes32>",
+          "valueType": "t_bytes32",
+          "length": "dyn",
+          "kind": "array",
+          "label": "bytes32[]"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        },
+        "t_mapping<t_struct<AccessControlUpgradeSafe.RoleData>>": {
+          "id": "t_mapping<t_struct<AccessControlUpgradeSafe.RoleData>>",
+          "valueType": "t_struct<AccessControlUpgradeSafe.RoleData>",
+          "label": "mapping(key => AccessControlUpgradeSafe.RoleData)",
+          "kind": "mapping"
+        },
+        "t_array:49<t_uint256>": {
+          "id": "t_array:49<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "49",
+          "kind": "array",
+          "label": "uint256[49]"
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_uint8": {
+          "id": "t_uint8",
+          "kind": "elementary",
+          "label": "uint8"
+        },
+        "t_array:44<t_uint256>": {
+          "id": "t_array:44<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "44",
+          "kind": "array",
+          "label": "uint256[44]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 50,
+          "type": "t_bool",
+          "src": "757:24:1"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 53,
+          "type": "t_bool",
+          "src": "876:25:1"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 118,
+          "type": "t_array:50<t_uint256>",
+          "src": "1982:29:1"
+        },
+        {
+          "contract": "ContextUpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/GSN/Context.sol",
+          "label": "__gap",
+          "astId": 43,
+          "type": "t_array:50<t_uint256>",
+          "src": "1277:25:0"
+        },
+        {
+          "contract": "AccessControlUpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/access/AccessControl.sol",
+          "label": "_roles",
+          "astId": 163,
+          "type": "t_mapping<t_struct<AccessControlUpgradeSafe.RoleData>>",
+          "src": "1727:44:2"
+        },
+        {
+          "contract": "AccessControlUpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/access/AccessControl.sol",
+          "label": "__gap",
+          "astId": 408,
+          "type": "t_array:49<t_uint256>",
+          "src": "6927:25:2"
+        },
+        {
+          "contract": "ERC20UpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+          "label": "_balances",
+          "astId": 948,
+          "type": "t_mapping<t_uint256>",
+          "src": "1481:46:6"
+        },
+        {
+          "contract": "ERC20UpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+          "label": "_allowances",
+          "astId": 954,
+          "type": "t_mapping<t_uint256>",
+          "src": "1534:69:6"
+        },
+        {
+          "contract": "ERC20UpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+          "label": "_totalSupply",
+          "astId": 956,
+          "type": "t_uint256",
+          "src": "1610:28:6"
+        },
+        {
+          "contract": "ERC20UpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+          "label": "_name",
+          "astId": 958,
+          "type": "t_string",
+          "src": "1645:20:6"
+        },
+        {
+          "contract": "ERC20UpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+          "label": "_symbol",
+          "astId": 960,
+          "type": "t_string",
+          "src": "1671:22:6"
+        },
+        {
+          "contract": "ERC20UpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+          "label": "_decimals",
+          "astId": 962,
+          "type": "t_uint8",
+          "src": "1699:23:6"
+        },
+        {
+          "contract": "ERC20UpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20.sol",
+          "label": "__gap",
+          "astId": 1457,
+          "type": "t_array:44<t_uint256>",
+          "src": "11045:25:6"
+        },
+        {
+          "contract": "ERC20BurnableUpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20Burnable.sol",
+          "label": "__gap",
+          "astId": 1538,
+          "type": "t_array:50<t_uint256>",
+          "src": "1443:25:7"
+        },
+        {
+          "contract": "PausableUpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/utils/Pausable.sol",
+          "label": "_paused",
+          "astId": 2162,
+          "type": "t_bool",
+          "src": "825:20:12"
+        },
+        {
+          "contract": "PausableUpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/utils/Pausable.sol",
+          "label": "__gap",
+          "astId": 2251,
+          "type": "t_array:49<t_uint256>",
+          "src": "2073:25:12"
+        },
+        {
+          "contract": "ERC20PausableUpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/token/ERC20/ERC20Pausable.sol",
+          "label": "__gap",
+          "astId": 1603,
+          "type": "t_array:50<t_uint256>",
+          "src": "1130:25:8"
+        },
+        {
+          "contract": "ERC20PresetMinterPauserUpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/presets/ERC20PresetMinterPauser.sol",
+          "label": "__gap",
+          "astId": 923,
+          "type": "t_array:50<t_uint256>",
+          "src": "3454:25:5"
+        },
+        {
+          "contract": "BaseConstants",
+          "path": "contracts/BaseConstants.sol",
+          "label": "OWNER",
+          "astId": 2262,
+          "type": "t_address",
+          "src": "155:37:13"
+        },
+        {
+          "contract": "BaseConstants",
+          "path": "contracts/BaseConstants.sol",
+          "label": "ADMIN",
+          "astId": 2269,
+          "type": "t_address",
+          "src": "264:37:13"
+        },
+        {
+          "contract": "BaseConstants",
+          "path": "contracts/BaseConstants.sol",
+          "label": "NAME",
+          "astId": 2273,
+          "type": "t_string",
+          "src": "337:46:13"
+        },
+        {
+          "contract": "BaseConstants",
+          "path": "contracts/BaseConstants.sol",
+          "label": "SYMBOL",
+          "astId": 2277,
+          "type": "t_string",
+          "src": "421:30:13"
+        },
+        {
+          "contract": "BaseConstants",
+          "path": "contracts/BaseConstants.sol",
+          "label": "DECIMALS",
+          "astId": 2281,
+          "type": "t_uint8",
+          "src": "491:27:13"
+        },
+        {
+          "contract": "BaseConstants",
+          "path": "contracts/BaseConstants.sol",
+          "label": "TOTAL_SUPPLY",
+          "astId": 2285,
+          "type": "t_uint256",
+          "src": "562:41:13"
+        },
+        {
+          "contract": "OwnableUpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol",
+          "label": "_owner",
+          "astId": 420,
+          "type": "t_address",
+          "src": "651:22:3"
+        },
+        {
+          "contract": "OwnableUpgradeSafe",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/access/Ownable.sol",
+          "label": "__gap",
+          "astId": 538,
+          "type": "t_array:49<t_uint256>",
+          "src": "2434:25:3"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "metaltradingcompanysmartcontract/MetalTradingCompanySmartContract": [
+      {
+        "address": "0xC02a268B9f0c38E519a04A80f8e4D5477eFF63f4",
+        "version": "1.0.",
+        "implementation": "0x0adE9D56A4ae4E252763BedF21267fe10656789F",
+        "admin": "0xEE6a450191536CBf048B4A5F144EB0F5A5e50BD5",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.",
+  "proxyAdmin": {
+    "address": "0xEE6a450191536CBf048B4A5F144EB0F5A5e50BD5"
+  }
+}

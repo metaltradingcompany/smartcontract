@@ -1,0 +1,472 @@
+{
+  "fileName": "BaseConstants.sol",
+  "contractName": "BaseConstants",
+  "source": "pragma solidity ^0.6.0;\n\n/// @title Base contract variables\ncontract BaseConstants {\n\n    /// @dev Contract owner address\n    address internal OWNER = address(0x0);\n\n    /// @dev Contract admin address\n    address internal ADMIN = address(0x0);\n\n    /// @dev Contract name\n    string internal NAME = \"Metal Trading Company\";\n\n    /// @dev Contract symbol\n    string internal SYMBOL = \"MTC\";\n\n    /// @dev Contract decimals\n    uint8 internal DECIMALS = 0;\n\n    /// @dev Contract total supply\n    uint256 internal TOTAL_SUPPLY = 100000000;\n}\n",
+  "sourcePath": "contracts/BaseConstants.sol",
+  "sourceMap": "60:480:13:-:0;;;159:3;126:37;;;;;;;;;;;;;;;;;;;;239:3;206:37;;;;;;;;;;;;;;;;;;;;277:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;359:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;453:1;427:27;;;;;;;;;;;;;;;;;;;;528:9;496:41;;60:480;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "60:480:13:-:0;;;;;",
+  "abi": [],
+  "ast": {
+    "absolutePath": "contracts/BaseConstants.sol",
+    "exportedSymbols": {
+      "BaseConstants": [
+        2286
+      ]
+    },
+    "id": 2287,
+    "license": null,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2254,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:13"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 2255,
+          "nodeType": "StructuredDocumentation",
+          "src": "25:35:13",
+          "text": "@title Base contract variables"
+        },
+        "fullyImplemented": true,
+        "id": 2286,
+        "linearizedBaseContracts": [
+          2286
+        ],
+        "name": "BaseConstants",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "documentation": {
+              "id": 2256,
+              "nodeType": "StructuredDocumentation",
+              "src": "90:31:13",
+              "text": "@dev Contract owner address"
+            },
+            "id": 2262,
+            "mutability": "mutable",
+            "name": "OWNER",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2286,
+            "src": "126:37:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 2257,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "126:7:13",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307830",
+                  "id": 2260,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "159:3:13",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_0_by_1",
+                    "typeString": "int_const 0"
+                  },
+                  "value": "0x0"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_0_by_1",
+                    "typeString": "int_const 0"
+                  }
+                ],
+                "id": 2259,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "lValueRequested": false,
+                "nodeType": "ElementaryTypeNameExpression",
+                "src": "151:7:13",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_address_$",
+                  "typeString": "type(address)"
+                },
+                "typeName": {
+                  "id": 2258,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "151:7:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": null,
+                    "typeString": null
+                  }
+                }
+              },
+              "id": 2261,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "151:12:13",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "documentation": {
+              "id": 2263,
+              "nodeType": "StructuredDocumentation",
+              "src": "170:31:13",
+              "text": "@dev Contract admin address"
+            },
+            "id": 2269,
+            "mutability": "mutable",
+            "name": "ADMIN",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2286,
+            "src": "206:37:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 2264,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "206:7:13",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307830",
+                  "id": 2267,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "239:3:13",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_0_by_1",
+                    "typeString": "int_const 0"
+                  },
+                  "value": "0x0"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_rational_0_by_1",
+                    "typeString": "int_const 0"
+                  }
+                ],
+                "id": 2266,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "lValueRequested": false,
+                "nodeType": "ElementaryTypeNameExpression",
+                "src": "231:7:13",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_address_$",
+                  "typeString": "type(address)"
+                },
+                "typeName": {
+                  "id": 2265,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "231:7:13",
+                  "typeDescriptions": {
+                    "typeIdentifier": null,
+                    "typeString": null
+                  }
+                }
+              },
+              "id": 2268,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "231:12:13",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "documentation": {
+              "id": 2270,
+              "nodeType": "StructuredDocumentation",
+              "src": "250:22:13",
+              "text": "@dev Contract name"
+            },
+            "id": 2273,
+            "mutability": "mutable",
+            "name": "NAME",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2286,
+            "src": "277:46:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2271,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "277:6:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4d6574616c2054726164696e6720436f6d70616e79",
+              "id": 2272,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "300:23:13",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_dee63801f4c0245d52ccf327eaafeb74875ac2f3fe06447bd9361b6ad0cb22bd",
+                "typeString": "literal_string \"Metal Trading Company\""
+              },
+              "value": "Metal Trading Company"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "documentation": {
+              "id": 2274,
+              "nodeType": "StructuredDocumentation",
+              "src": "330:24:13",
+              "text": "@dev Contract symbol"
+            },
+            "id": 2277,
+            "mutability": "mutable",
+            "name": "SYMBOL",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2286,
+            "src": "359:30:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2275,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "359:6:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4d5443",
+              "id": 2276,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "384:5:13",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_d350b48f957eb97e3aa630d5e321208675938073296dce9d3cfbfd6afa719e38",
+                "typeString": "literal_string \"MTC\""
+              },
+              "value": "MTC"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "documentation": {
+              "id": 2278,
+              "nodeType": "StructuredDocumentation",
+              "src": "396:26:13",
+              "text": "@dev Contract decimals"
+            },
+            "id": 2281,
+            "mutability": "mutable",
+            "name": "DECIMALS",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2286,
+            "src": "427:27:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 2279,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "427:5:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 2280,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "453:1:13",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "documentation": {
+              "id": 2282,
+              "nodeType": "StructuredDocumentation",
+              "src": "461:30:13",
+              "text": "@dev Contract total supply"
+            },
+            "id": 2285,
+            "mutability": "mutable",
+            "name": "TOTAL_SUPPLY",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 2286,
+            "src": "496:41:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2283,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "496:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "313030303030303030",
+              "id": 2284,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "528:9:13",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_100000000_by_1",
+                "typeString": "int_const 100000000"
+              },
+              "value": "100000000"
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 2287,
+        "src": "60:480:13"
+      }
+    ],
+    "src": "0:541:13"
+  },
+  "bytecode": "0x608060405260008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506040518060400160405280601581526020017f4d6574616c2054726164696e6720436f6d70616e790000000000000000000000815250600290805190602001906100d2929190610155565b506040518060400160405280600381526020017f4d544300000000000000000000000000000000000000000000000000000000008152506003908051906020019061011e929190610155565b506000600460006101000a81548160ff021916908360ff1602179055506305f5e10060055534801561014f57600080fd5b506101f2565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061019657805160ff19168380011785556101c4565b828001600101855582156101c4579182015b828111156101c35782518255916020019190600101906101a8565b5b5090506101d191906101d5565b5090565b5b808211156101ee5760008160009055506001016101d6565b5090565b603f806102006000396000f3fe6080604052600080fdfea264697066735822122031534c849b57f4a9741c3f270fbff8a0fd3ad19b79f337b451d0a8f4613bbaeb64736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122031534c849b57f4a9741c3f270fbff8a0fd3ad19b79f337b451d0a8f4613bbaeb64736f6c634300060c0033",
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang",
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "evmVersion": "petersburg"
+  }
+}
