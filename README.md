@@ -1,4 +1,4 @@
-## MEREHEAD smart contracts documentaion
+## MEREHEAD smart contracts documentation
 
 > **Only for linux user**
 
