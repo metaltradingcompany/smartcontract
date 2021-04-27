@@ -16,7 +16,7 @@ contract BaseConstants {
     string internal SYMBOL = "MTC";
 
     /// @dev Contract decimals
-    uint8 internal DECIMALS = 0;
+    uint8 internal DECIMALS = 4;
 
     /// @dev Contract total supply
     uint256 internal TOTAL_SUPPLY = 100000000;
