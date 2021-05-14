@@ -10,7 +10,7 @@ contract BaseConstants {
     address internal ADMIN = address(0x0);
 
     /// @dev Contract name
-    string internal NAME = "Metal Trading Company";
+    string internal NAME = "MT-COINS";
 
     /// @dev Contract symbol
     string internal SYMBOL = "MTC";
