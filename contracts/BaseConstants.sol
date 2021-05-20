@@ -10,10 +10,10 @@ contract BaseConstants {
     address internal ADMIN = address(0x0);
 
     /// @dev Contract name
-    string internal NAME = "MT-COINS";
+    string internal NAME = "MT-COINS GOLD";
 
     /// @dev Contract symbol
-    string internal SYMBOL = "MTC";
+    string internal SYMBOL = "MTCG";
 
     /// @dev Contract decimals
     uint8 internal DECIMALS = 4;

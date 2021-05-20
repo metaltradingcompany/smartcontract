@@ -61,5 +61,4 @@ contract MetalTradingCompanySmartContract is ERC20PresetMinterPauserUpgradeSafe,
     function addTokens(uint256 amount) public onlyOwnerOrAdmin {
         _mint(owner(), amount);
     }
-
 }

@@ -1,10 +1,10 @@
 {
   "fileName": "BaseConstants.sol",
   "contractName": "BaseConstants",
-  "source": "pragma solidity ^0.6.0;\n\n/// @title Base contract variables\ncontract BaseConstants {\n\n    /// @dev Contract owner address\n    address internal OWNER = address(0x0);\n\n    /// @dev Contract admin address\n    address internal ADMIN = address(0x0);\n\n    /// @dev Contract name\n    string internal NAME = \"Metal Trading Company\";\n\n    /// @dev Contract symbol\n    string internal SYMBOL = \"MTC\";\n\n    /// @dev Contract decimals\n    uint8 internal DECIMALS = 0;\n\n    /// @dev Contract total supply\n    uint256 internal TOTAL_SUPPLY = 100000000;\n}\n",
+  "source": "pragma solidity ^0.6.0;\n\n/// @title Base contract variables\ncontract BaseConstants {\n\n    /// @dev Contract owner address\n    address internal OWNER = address(0x0);\n\n    /// @dev Contract admin address\n    address internal ADMIN = address(0x0);\n\n    /// @dev Contract name\n    string internal NAME = \"MT-COINS\";\n\n    /// @dev Contract symbol\n    string internal SYMBOL = \"MTC\";\n\n    /// @dev Contract decimals\n    uint8 internal DECIMALS = 4;\n\n    /// @dev Contract total supply\n    uint256 internal TOTAL_SUPPLY = 100000000;\n}\n",
   "sourcePath": "contracts/BaseConstants.sol",
-  "sourceMap": "60:480:13:-:0;;;159:3;126:37;;;;;;;;;;;;;;;;;;;;239:3;206:37;;;;;;;;;;;;;;;;;;;;277:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;359:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;453:1;427:27;;;;;;;;;;;;;;;;;;;;528:9;496:41;;60:480;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "60:480:13:-:0;;;;;",
+  "sourceMap": "60:467:13:-:0;;;159:3;126:37;;;;;;;;;;;;;;;;;;;;239:3;206:37;;;;;;;;;;;;;;;;;;;;277:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;346:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;440:1;414:27;;;;;;;;;;;;;;;;;;;;515:9;483:41;;60:467;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "60:467:13:-:0;;;;;",
   "abi": [],
   "ast": {
     "absolutePath": "contracts/BaseConstants.sol",
@@ -261,7 +261,7 @@
             "nodeType": "VariableDeclaration",
             "overrides": null,
             "scope": 2286,
-            "src": "277:46:13",
+            "src": "277:33:13",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -280,7 +280,7 @@
             },
             "value": {
               "argumentTypes": null,
-              "hexValue": "4d6574616c2054726164696e6720436f6d70616e79",
+              "hexValue": "4d542d434f494e53",
               "id": 2272,
               "isConstant": false,
               "isLValue": false,
@@ -288,13 +288,13 @@
               "kind": "string",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "300:23:13",
+              "src": "300:10:13",
               "subdenomination": null,
               "typeDescriptions": {
-                "typeIdentifier": "t_stringliteral_dee63801f4c0245d52ccf327eaafeb74875ac2f3fe06447bd9361b6ad0cb22bd",
-                "typeString": "literal_string \"Metal Trading Company\""
+                "typeIdentifier": "t_stringliteral_76a4a5d0d29bf359efe3a2c9420e0f9b68db46b2083e190f32342e9495a8e277",
+                "typeString": "literal_string \"MT-COINS\""
               },
-              "value": "Metal Trading Company"
+              "value": "MT-COINS"
             },
             "visibility": "internal"
           },
@@ -303,7 +303,7 @@
             "documentation": {
               "id": 2274,
               "nodeType": "StructuredDocumentation",
-              "src": "330:24:13",
+              "src": "317:24:13",
               "text": "@dev Contract symbol"
             },
             "id": 2277,
@@ -312,7 +312,7 @@
             "nodeType": "VariableDeclaration",
             "overrides": null,
             "scope": 2286,
-            "src": "359:30:13",
+            "src": "346:30:13",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -323,7 +323,7 @@
               "id": 2275,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "359:6:13",
+              "src": "346:6:13",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -339,7 +339,7 @@
               "kind": "string",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "384:5:13",
+              "src": "371:5:13",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_stringliteral_d350b48f957eb97e3aa630d5e321208675938073296dce9d3cfbfd6afa719e38",
@@ -354,7 +354,7 @@
             "documentation": {
               "id": 2278,
               "nodeType": "StructuredDocumentation",
-              "src": "396:26:13",
+              "src": "383:26:13",
               "text": "@dev Contract decimals"
             },
             "id": 2281,
@@ -363,7 +363,7 @@
             "nodeType": "VariableDeclaration",
             "overrides": null,
             "scope": 2286,
-            "src": "427:27:13",
+            "src": "414:27:13",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -374,7 +374,7 @@
               "id": 2279,
               "name": "uint8",
               "nodeType": "ElementaryTypeName",
-              "src": "427:5:13",
+              "src": "414:5:13",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint8",
                 "typeString": "uint8"
@@ -382,7 +382,7 @@
             },
             "value": {
               "argumentTypes": null,
-              "hexValue": "30",
+              "hexValue": "34",
               "id": 2280,
               "isConstant": false,
               "isLValue": false,
@@ -390,13 +390,13 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "453:1:13",
+              "src": "440:1:13",
               "subdenomination": null,
               "typeDescriptions": {
-                "typeIdentifier": "t_rational_0_by_1",
-                "typeString": "int_const 0"
+                "typeIdentifier": "t_rational_4_by_1",
+                "typeString": "int_const 4"
               },
-              "value": "0"
+              "value": "4"
             },
             "visibility": "internal"
           },
@@ -405,7 +405,7 @@
             "documentation": {
               "id": 2282,
               "nodeType": "StructuredDocumentation",
-              "src": "461:30:13",
+              "src": "448:30:13",
               "text": "@dev Contract total supply"
             },
             "id": 2285,
@@ -414,7 +414,7 @@
             "nodeType": "VariableDeclaration",
             "overrides": null,
             "scope": 2286,
-            "src": "496:41:13",
+            "src": "483:41:13",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -425,7 +425,7 @@
               "id": 2283,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
-              "src": "496:7:13",
+              "src": "483:7:13",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -441,7 +441,7 @@
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "528:9:13",
+              "src": "515:9:13",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_100000000_by_1",
@@ -453,13 +453,13 @@
           }
         ],
         "scope": 2287,
-        "src": "60:480:13"
+        "src": "60:467:13"
       }
     ],
-    "src": "0:541:13"
+    "src": "0:528:13"
   },
-  "bytecode": "0x608060405260008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506040518060400160405280601581526020017f4d6574616c2054726164696e6720436f6d70616e790000000000000000000000815250600290805190602001906100d2929190610155565b506040518060400160405280600381526020017f4d544300000000000000000000000000000000000000000000000000000000008152506003908051906020019061011e929190610155565b506000600460006101000a81548160ff021916908360ff1602179055506305f5e10060055534801561014f57600080fd5b506101f2565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061019657805160ff19168380011785556101c4565b828001600101855582156101c4579182015b828111156101c35782518255916020019190600101906101a8565b5b5090506101d191906101d5565b5090565b5b808211156101ee5760008160009055506001016101d6565b5090565b603f806102006000396000f3fe6080604052600080fdfea264697066735822122031534c849b57f4a9741c3f270fbff8a0fd3ad19b79f337b451d0a8f4613bbaeb64736f6c634300060c0033",
-  "deployedBytecode": "0x6080604052600080fdfea264697066735822122031534c849b57f4a9741c3f270fbff8a0fd3ad19b79f337b451d0a8f4613bbaeb64736f6c634300060c0033",
+  "bytecode": "0x608060405260008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506040518060400160405280600881526020017f4d542d434f494e53000000000000000000000000000000000000000000000000815250600290805190602001906100d2929190610154565b506040518060400160405280600381526020017f4d544300000000000000000000000000000000000000000000000000000000008152506003908051906020019061011e929190610154565b5060048060006101000a81548160ff021916908360ff1602179055506305f5e10060055534801561014e57600080fd5b506101f1565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061019557805160ff19168380011785556101c3565b828001600101855582156101c3579182015b828111156101c25782518255916020019190600101906101a7565b5b5090506101d091906101d4565b5090565b5b808211156101ed5760008160009055506001016101d5565b5090565b603f806101ff6000396000f3fe6080604052600080fdfea264697066735822122068971b88a7a86c15eec4669a772f95e09049a10b65eb8a7fd82e03b0c6d81c0564736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122068971b88a7a86c15eec4669a772f95e09049a10b65eb8a7fd82e03b0c6d81c0564736f6c634300060c0033",
   "compiler": {
     "name": "solc",
     "version": "0.6.12+commit.27d51765.Emscripten.clang",
