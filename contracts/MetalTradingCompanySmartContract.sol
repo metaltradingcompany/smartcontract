@@ -9,11 +9,6 @@ contract MetalTradingCompanySmartContract is ERC20PresetMinterPauserUpgradeSafe,
 
     // Modifiers
 
-    modifier onlyMinter() {
-        require(hasRole(MINTER_ROLE, msg.sender), "MetalTradingCompanySmartContract: Only approved card minter");
-        _;
-    }
-
     modifier onlyOwnerOrAdmin() {
         require(hasRole(DEFAULT_ADMIN_ROLE, msg.sender), "MetalTradingCompanySmartContract: Only owner or admin user");
         _;
